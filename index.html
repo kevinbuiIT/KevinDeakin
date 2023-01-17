@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset ="utf-8"/>
+	<meta name="description" content="My resume website"/>
+	<meta name="author" content="Kevin"/>
+	<meta name="country" content="Vietnam"/>
+	<meta name ="viewport" content ="width=device-width, initial -scale =1"/>
+	<link rel="stylesheet" href="CSS/12.css"/>
+	<script src="validate.js"></script>
+	<title> myself</title>
+</head>
+<style>
+	html{
+		scroll-behavior: smooth;
+	}
+</style>
+<body background="assets/background1.jpeg">
+	<h1 id="menu_text">ABOUT ME</h1>
+	<nav>
+		<a href="#info" >Info</a>
+		<a href="#education">Education</a>
+		<a href="#contact">Contact</a>
+		<a href="#input">Detail</a>
+	</nav>
+	<div id="flex-container">
+		<div id="left_side">
+			<h1 id="info">Information</h1>
+			<img src="assets/kevin.jpg" alt="My photo" width="200" height="200"/>
+			<p><em>I will come and pick you up</em></p>
+			<p><strong>Fullname:</strong> Bui Khoi Nguyen</p>
+			<p><strong>Age:</strong>18</p>
+			<p><strong>Country:</strong> Australia</p>
+			<h1 id ="education"> Education</h1>
+			<ol>
+				<li>Truong Vinh Ky High School</li>
+				<li>Deakin University</li>
+			</ol>
+			<h1 id="contact">Contact</h1>
+			<div class="wrapper">
+				<p>Facebook:<a href="https://www.facebook.com/bui.nguyen.58118774">ACCEPT ALL</a></p>
+				<p>Instagram:<a href="https://www.instagram.com/bkhooinguyeen/">ACCEPT ALL</a></p>
+			</div>
+		</div>
+		<div id="right-container">
+			<h1 id="input">Detail</h1>
+			<div id="error" style="color:red"></div>
+			<form id="registerForm" method="post" action="love.html" novalidate>
+				<p>
+					<label for="name">Enter your name: </label>
+					<input class="search-bar"type="text" name="name" id="name"/>
+				</p>
+				<p>
+					<label for="age">Enter your age: </label>
+					<input class="search-bar" type="text" name="age" id="age"/>
+				</p>
+				<p>
+					<label for="status">Enter your status(single/taken): </label>
+					<input  class="search-bar" type="text" name="status" id="status"/>
+				</p>
+				<p>
+					<label for="love">Please type "<strong>Em iu anh so much</strong>" to get to next page: </label>
+					<input  class="search-bar" type="text" name="love" id="love" pattern="^Em iu anh so much$"/>
+				</p>
+				<input class= "button" type="submit" value="submit"/>
+				<input class="button" type="reset" value= "reset"/>
+			</form>
+		</div>
+	</div>
+
+
+</body>
+</html>
