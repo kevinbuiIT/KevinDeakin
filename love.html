@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My lover</title>
+	<meta charset ="utf-8"/>
+	<meta name="description" content="i love you"/>
+	<meta name="wedding" content="darling"/>
+	<meta name="country" content="my lover"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="CSS/11.css"/>
+</head>
+<style>
+	html{
+		scroll-behavior: smooth;
+	}
+</style>
+<body background="assets/background.jpeg">
+	<h1 id="menu">I LOVE YOU</h1>
+	<nav>
+		<a href="#love">Love</a>
+		<a href="#sad">Sad</a>
+	</nav>
+	<div id="container">
+		<form action="https://www.youtube.com/search" method="get" class="search-bar">
+			<input type="text" placeholder="Search music" name="q"/>
+			<button type="submit"><img src="assets/scope.png"></button>
+		</form>
+	</div>
+	<div id="flex_container">
+		<div id="first_picture">
+			<img id="picture1" src="assets/love3.jpeg" alt="love" width="320" height="320" />
+			<!-- <img id="picture2" src="assets/love4.jpeg" alt="love" width="320" height="320" /> -->
+		</div>
+		<div id="second_picture">
+			<img id="picture2" src="assets/love4.jpeg" alt="love" width="320" height="320" />
+		</div>
+
+		<div id="content1">
+			<ul>
+				<h1 id="love">Playlist Love</h1>
+				<li><p >Anh Không Thề Gì Đâu Anh Làm<img id="song6" class="play1"src="assets/play.png"></p></li>
+				<li><p>Thế Giới Có Nơi Nào Cho Em<img id="song7" class="play1"src="assets/play.png"></p></li>
+				<li><p>Cưới Đi<img id="song8" class="play1"src="assets/play.png"></p></li>
+				<li><p>có em chờ<img id="song9" class="play1"src="assets/play.png"></p></li>
+				<li><p>Yêu Được Không<img id="song10" class="play1"src="assets/play.png"></p></li>
+				<li><p>Ngày Đầu Tiên<img id="song11" class="play1"src="assets/play.png"></p></li>
+			</ul>
+		</div>
+		<div id="content2">	
+			<ul>
+				<h1 id="sad">Playlist Breakup</h1>
+				<li><p>Still with you(Jungkook)<img id="song" class="play1" src="assets/play.png"></p></li>
+				<li><p>Try again<img id="song1" class="play1"src="assets/play.png"></p></li>
+				<li><p>Đâu ai vì nhau<img id="song2"class="play1"src="assets/play.png"></p></li>
+				<li><p>Tìm một người như thế<img id="song3" class="play1"src="assets/play.png"></p></li>
+				<li><p>	Nếu ngày ấy<img id="song4" class="play1"src="assets/play.png"></p></li>
+				<li><p>Only-Lee Hi<img id="song5" class="play1"src="assets/play.png"></p></li>
+			</ul>
+		</div>	
+	</div>
+
+	<audio id="music1">
+		<source src="music/jungkook.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music2">
+		<source src="music/try again.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music3">
+		<source src="music/vi nhau.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music4">
+		<source src="music/mot nguoi nhu the.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music5">
+		<source src="music/neu ngay ay.mp3" type="audio/mp3">
+	</audio>
+
+	<audio id="music6">
+		<source src="music/only.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music7">
+		<source src="music/anh lam.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music8">
+		<source src="music/the gioi.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music9">
+		<source src="music/cuoi di.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music10">
+		<source src="music/co em cho.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music11">
+		<source src="music/yeu duoc khong.mp3" type="audio/mp3">
+	</audio>
+	<audio id="music12">
+		<source src="music/ngay dau tien.mp3" type="audio/mp3">
+	</audio>
+	<script>
+		var mysong =document.getElementById("music1");
+		var icon= document.getElementById("song");
+
+		var mysong1=document.getElementById("music2");
+		var icon1=document.getElementById("song1");
+
+		var mysong2=document.getElementById("music3");
+		var icon2=document.getElementById("song2");
+
+		var mysong3=document.getElementById("music4");
+		var icon3=document.getElementById("song3");
+
+		var mysong4=document.getElementById("music5");
+		var icon4=document.getElementById("song4");
+
+		var mysong5=document.getElementById("music6");
+		var icon5=document.getElementById("song5");
+
+		var mysong6=document.getElementById("music7");
+		var icon6=document.getElementById("song6");
+
+		var mysong7=document.getElementById("music8");
+		var icon7=document.getElementById("song7");
+
+		var mysong8=document.getElementById("music9");
+		var icon8=document.getElementById("song8");
+
+		var mysong9=document.getElementById("music10");
+		var icon9=document.getElementById("song9");
+
+		var mysong10=document.getElementById("music11");
+		var icon10=document.getElementById("song10");
+
+		var mysong11=document.getElementById("music12");
+		var icon11=document.getElementById("song11");
+
+		icon11.onclick =function(){
+			if(mysong11.paused){
+				mysong11.play();
+				icon11.src="assets/pause.png";
+			}else{
+				mysong11.pause();
+				icon11.src="assets/play.png";
+			}
+		}
+
+		icon10.onclick =function(){
+			if(mysong10.paused){
+				mysong10.play();
+				icon10.src="assets/pause.png";
+			}else{
+				mysong10.pause();
+				icon10.src="assets/play.png";
+			}
+		}
+		icon9.onclick =function(){
+			if(mysong9.paused){
+				mysong9.play();
+				icon9.src="assets/pause.png";
+			}else{
+				mysong9.pause();
+				icon9.src="assets/play.png";
+			}
+		}
+
+		icon8.onclick =function(){
+			if(mysong8.paused){
+				mysong8.play();
+				icon8.src="assets/pause.png";
+			}else{
+				mysong8.pause();
+				icon8.src="assets/play.png";
+			}
+		}
+
+		icon7.onclick =function(){
+			if(mysong7.paused){
+				mysong7.play();
+				icon7.src="assets/pause.png";
+			}else{
+				mysong7.pause();
+				icon7.src="assets/play.png";
+			}
+		}
+
+		icon6.onclick =function(){
+			if(mysong6.paused){
+				mysong6.play();
+				icon6.src="assets/pause.png";
+			}else{
+				mysong6.pause();
+				icon6.src="assets/play.png";
+			}
+		}
+
+		icon5.onclick =function(){
+			if(mysong5.paused){
+				mysong5.play();
+				icon5.src="assets/pause.png";
+			}else{
+				mysong5.pause();
+				icon5.src="assets/play.png";
+			}
+		}
+
+		icon4.onclick =function(){
+			if(mysong4.paused){
+				mysong4.play();
+				icon4.src="assets/pause.png";
+			}else{
+				mysong4.pause();
+				icon4.src="assets/play.png";
+			}
+		}
+
+		icon3.onclick = function(){
+			if(mysong3.paused){
+				mysong3.play();
+				icon3.src="assets/pause.png";
+			}else{
+				mysong3.pause();
+				icon3.src="assets/play.png";
+			}
+		}
+		icon2.onclick= function(){
+			if(mysong2.paused){
+				mysong2.play();
+				icon2.src="assets/pause.png";
+			}else{
+				mysong2.pause();
+				icon2.src="assets/play.png";
+			}
+		}
+
+		icon1.onclick= function(){
+			if(mysong1.paused){
+				mysong1.play();
+				icon1.src="assets/pause.png";
+			}else{
+				mysong1.pause();
+				icon1.src="assets/play.png";
+			}
+		}
+		
+		icon.onclick= function(){
+			if(mysong.paused){
+				mysong.play();
+				icon.src="assets/pause.png";
+			}else{
+				mysong.pause();
+				icon.src="assets/play.png";
+			}
+		}
+	</script>
+</body>
+</html>
