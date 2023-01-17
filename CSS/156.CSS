@@ -1,0 +1,66 @@
+#h1{
+	font-family: "Time New Roman";
+	text-align: center;
+	color:white;
+}
+
+#picture{
+	padding:20px;
+	margin:20px;
+	position: relative;
+	right:20px;
+}
+.picture1{
+	padding:20px;
+}
+.picture2{
+	padding:20px;
+}
+.picture3{
+	padding:20px;
+}
+.picture4{
+	padding:20px;
+}
+.picture5{
+	padding:20px;
+}
+
+#love{
+	color:white;
+	float:left;
+	text-align: center;
+	
+}
+
+#sad{
+	color: white;
+	float: left;
+	text-align: center;
+
+}
+#pop{
+	color: white;
+	float: left;
+	text-align: center;
+
+}
+#jazz{
+	color: white;
+	float: left;
+	text-align: center;
+
+}
+#classic{
+	color: white;
+	float: left;
+	text-align: center;
+
+}
+#button{
+	text-align: right;
+	position: relative;
+	top:480px;
+	color:white;
+	font-size: 15px;
+}

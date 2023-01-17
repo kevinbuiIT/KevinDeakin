@@ -1,0 +1,49 @@
+#logo{
+	text-align: center;
+	color:white;
+	font-family: Arial;
+	font-size: 50px;
+}
+#outline{
+	color:white;
+}
+
+#picture{
+	
+	position: relative;
+	left:100px;
+
+}
+.picture1{
+	padding: 20px;
+}
+.picture2{
+	padding: 20px;
+}
+.picture3{
+	padding: 20px;
+}
+
+#outline{
+	text-align: center;
+	float: center;
+}
+#button{
+	color:white;
+
+}
+nav{
+	background-color: #333;
+	overflow: hidden;
+}
+nav a{
+	color:white;
+	padding: 50px 50px;
+	display: block;
+	text-align: center;
+	text-decoration:none;
+}
+nav a:hover{
+	background-color:#DDD;
+	color:black;
+}

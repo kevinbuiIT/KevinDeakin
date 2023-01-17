@@ -1,0 +1,158 @@
+
+#menu{
+	background-color: grey;
+	text-align: center;
+	padding:80px 20px 20px 80px;
+	margin: 0;
+	padding:0;
+}
+
+nav {
+	background-color: #333;
+	overflow: hidden;
+}
+
+nav a{
+	color:white;
+	padding: 50px 50px;
+/*	display: block;*/
+	text-align: center;
+	text-decoration:none;
+}
+
+nav a:hover{
+	background-color:#DDD;
+	color:black;
+}
+
+#container{
+	width:100%;
+	min-ehgith:50vh;
+	
+}
+.search-bar{
+	width:100%;
+	max-width:500px;
+	background: rgba(255, 255, 255,0.2);
+	align-items: center;
+	border-radius: 60px;
+/*	padding: 2px ;*/
+	margin:5px;
+	backdrop-filter:blur(4px) saturate(180%);
+}
+.search-bar input{
+	background:transparent;
+	
+	border:0;
+	outline:none;
+	padding:20px 20px;
+	font-size:15px;
+	color: #cac7ff;
+}
+
+.search-bar button img{
+	width:25px;
+}
+.search-bar button{
+	border:0;
+	border-radius:50%;
+	width:40px;
+	height:40px;
+	background: #58629b;
+	cursor:pointer;
+	
+	position: relative;
+	left:250px;
+	top:8px;
+}
+::placeholder{
+	color: #cac7ff;
+}
+
+
+#first_picture{
+	color:white;
+	grid-area:picture1;
+	padding: 40px;
+	
+}
+#second_picture{
+	color:white;
+	grid-area:picture2;
+	padding: 40px;
+}
+
+#content1{
+	grid-area: content1;
+	color:white;
+}
+#content2{
+	grid-area: content2;
+	color: white;
+}
+
+
+#right_side{
+	color:white;
+	font-family: "Time New Roman";
+	margin:0px;
+	padding:0px;
+	
+}
+
+#flex_container{
+	display:grid;
+	grid-template-columns: 1fr 2000px;
+/*	grid-template-rows: 0px 10px 10px;*/
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+	'picture1 content1'
+	'picture2 content2';
+}
+
+
+@media(max-width:450px){
+	#flex_container{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+		'picture1'
+		'content1'
+		'picture2'
+		'content2';
+	}
+		
+	#first_picture{
+		grid-area: picture1;
+
+	}
+	#second_picture{
+		grid-area: picture2;
+	}
+	#content1{
+		padding:0px;
+		grid-area:content1;
+	}
+	#content2{
+		grid-area:content2;
+	}
+	.search-bar button img{
+		width:25px;
+	}
+	.search-bar button{
+		border:0;
+		border-radius:50%;
+		width:40px;
+		height:40px;
+		background: #58629b;
+		cursor:pointer;
+	
+		position: relative;
+		left:80px;
+		top:6px;
+	}
+
+}
+
+
+
